@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8"/>
+<html>
+<head>
+	<style>
+		table, th, td {
+  		 border: 1px solid rgb(22, 22, 22);
+  		 border-collapse: collapse;
+		}
+	</style>
+	<title>ciclo3</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+	</style>
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/funcionesDoctor.js"></script>
+	<link rel="stylesheet" href="/estilos/estilos.css">
+</head>
+<body>
+	<header id="banner">
+		<div>
+		<h1>EPS</h1>
+		</div>
+	</header>	
+	<div class="container">
+		<nav class="menu">
+			<ul class="nav">
+				<li><a href="/index.html">Inicio</a></li>
+				<li><a href="/paginas/specialty.html">Especilidades</a></li>
+				<li><a href="/paginas/doctor.html">Medicos</a></li>
+				<li><a href="/paginas/client.html">Usuarios</a></li>
+				<li><a href="/paginas/message.html">Dejanos tu mensaje</a></li>
+				<li><a href="/paginas/reservation.html">Reserva tu cita</a></li>
+				<li><a href="/paginas/reportes.html">Reportes</a></li>
+			</ul>
+		</nav>
+   		<h2>Doctores</h2>
+		<div></div>
+		<script type="text/javascript"> 
+			window.onload = consultarDoctor();
+		</script>
+
+		<input type="text" id="Dname" placeholder="Nombre">
+		<input type="text" id="Ddepartment" placeholder="Departamento">
+		<input type="number" id="Dyear" placeholder="Año Graduación">
+		<input type="text" id="Ddescription" placeholder="Descripción">
+		<select id="select-specialty"></select>
+		<script type="text/javascript">
+			window.onload = autoConsultarSpecialty();
+		</script>
+		<button onclick="guardarDoctor()">Crear</button>
+		<div id="resultado2"></div>
+		<div>
+
+			<table>
+				<tbody id="resultado2">
+
+				</tbody>
+			</table>
+		
+		</div>
+	</div>
+</body>

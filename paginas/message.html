@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8"/>
+<html>
+<head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+	</style>
+	<title>ciclo3</title>
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/funcionesMessage.js"></script>
+	<link rel="stylesheet" href="/estilos/estilos.css">
+</head>
+<body>
+	<header id="banner">
+		<div>
+		<h1>EPS</h1>
+		</div>
+	</header>	
+	<div class="container">
+		<nav class="menu">
+			<ul class="nav">
+				<li><a href="/index.html">Inicio</a></li>
+				<li><a href="/paginas/specialty.html">Especilidades</a></li>
+				<li><a href="/paginas/doctor.html">Medicos</a></li>
+				<li><a href="/paginas/client.html">Usuarios</a></li>
+				<li><a href="/paginas/message.html">Dejanos tu mensaje</a></li>
+				<li><a href="/paginas/reservation.html">Reserva tu cita</a></li>
+				<li><a href="/paginas/reportes.html">Reportes</a></li>
+			</ul>
+		</nav>
+    <h2>Mensajes</h2>
+	<div></div>
+	<div></div>
+	<button onclick="consultarMessage()">Consultar</button>
+	<div></div>
+	<input type="text" id="messageText" placeholder="Mensaje">
+	<select id="select-client"></select>
+	<script type="text/javascript"> 
+		window.onload = autoConsultarCliente();
+	</script>
+	<select id="select-doctor"></select>
+	<script type="text/javascript"> 
+		window.onload = autoConsultarDoctor();
+	</script>
+	<button onclick="guardarMessage()">Crear</button>
+	<div id="resultadoMensajes"></div>
+	<div>
+
+		<table>
+			<tbody id="resultadoMensajes">
+
+			</tbody>
+		</table>
+		
+	</div> 
+</div>
+</body>
